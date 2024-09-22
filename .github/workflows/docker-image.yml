@@ -1,4 +1,4 @@
-name: CI/CD for AIassistant App
+name: CI/CD for aiassistant App
 
 # Trigger the workflow on push or pull request to the main branch
 on:
@@ -36,6 +36,6 @@ jobs:
         context: .
         file: ./DockerFile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/AIassistant-app:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/aiassistant-app:latest
     
     # Step 5: Deploy the image (optional, deploy to your cloud provider or a service like Heroku)
